@@ -9,10 +9,10 @@ if [ "${currentArch}" != "${requireArch}" ]; then
 fi
 
 cd `dirname ${0}`
-archiveName=android-ndk-r20b-linux-x86_64.zip
+archiveName=android-ndk-r26d-linux.zip
 
-wget https://dl.google.com/android/repository/android-ndk-r20b-linux-x86_64.zip?hl=ja -O $archiveName
+wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip?hl=ja -O $archiveName
 unzip $archiveName
 rm -f $archiveName
 
-mv ./android-ndk-r20b ../libs
+mv ./android-ndk-r26d ../libs

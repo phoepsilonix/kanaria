@@ -105,7 +105,7 @@ tasks.getByName("install", Upload::class) {
     }
 }
 
-val androidNdkPath = "$rootDir/libs/android-ndk-r20b/toolchains/llvm/prebuilt/linux-x86_64/bin"
+val androidNdkPath = "$rootDir/libs/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin"
 rustic {
     projectSettings.projectLocation("$projectDir/src/main/rust")
     defaultConfig.defaultOptions.apply {
@@ -158,8 +158,8 @@ rustic {
 
         create("i686-unknown-linux-gnu") {
             environments(mapOf(
-                    "AR" to "/usr/bin/i686-linux-gnu-gcc-ar-8",
-                    "CC" to "/usr/bin/i686-linux-gnu-gcc-8"
+                    "AR" to "/usr/bin/i686-linux-gnu-gcc-ar-12",
+                    "CC" to "/usr/bin/i686-linux-gnu-gcc-12"
             ))
             defaultOptions.apply {
                 target("i686-unknown-linux-gnu")
@@ -168,8 +168,8 @@ rustic {
 
         create("x86_64-unknown-linux-gnu") {
             environments(mapOf(
-                    "AR" to "/usr/bin/x86_64-linux-gnu-gcc-ar-8",
-                    "CC" to "/usr/bin/x86_64-linux-gnu-gcc-8"
+                    "AR" to "/usr/bin/x86_64-linux-gnu-gcc-ar-12",
+                    "CC" to "/usr/bin/x86_64-linux-gnu-gcc-12"
             ))
             defaultOptions.apply {
                 target("x86_64-unknown-linux-gnu")
@@ -178,8 +178,8 @@ rustic {
 
         create("arm-unknown-linux-gnueabihf") {
             environments(mapOf(
-                    "AR" to "/usr/bin/arm-linux-gnueabihf-gcc-ar-8",
-                    "CC" to "/usr/bin/arm-linux-gnueabihf-gcc-8"
+                    "AR" to "/usr/bin/arm-linux-gnueabihf-gcc-ar-12",
+                    "CC" to "/usr/bin/arm-linux-gnueabihf-gcc-12"
             ))
             defaultOptions.apply {
                 target("arm-unknown-linux-gnueabihf")
@@ -188,8 +188,8 @@ rustic {
 
         create("aarch64-unknown-linux-gnu") {
             environments(mapOf(
-                    "AR" to "/usr/bin/aarch64-linux-gnu-gcc-ar-8",
-                    "CC" to "/usr/bin/aarch64-linux-gnu-gcc-8"
+                    "AR" to "/usr/bin/aarch64-linux-gnu-gcc-ar-12",
+                    "CC" to "/usr/bin/aarch64-linux-gnu-gcc-12"
             ))
             defaultOptions.apply {
                 target("aarch64-unknown-linux-gnu")
