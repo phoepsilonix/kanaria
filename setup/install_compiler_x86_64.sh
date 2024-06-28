@@ -9,8 +9,8 @@ if [ "${currentArch}" != "${requireArch}" ]; then
 fi
 
 apt-get install -y \
-  gcc-8 \
-  gcc-8-arm-linux-gnueabihf \
-  gcc-8-aarch64-linux-gnu \
-  gcc-8-i686-linux-gnu \
+  gcc-12 \
+  gcc-12-arm-linux-gnueabihf \
+  gcc-12-aarch64-linux-gnu \
+  gcc-12-i686-linux-gnu \
   mingw-w64
